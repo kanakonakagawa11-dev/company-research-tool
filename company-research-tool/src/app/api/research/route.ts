@@ -47,15 +47,11 @@ export async function POST(req: NextRequest) {
   let reportContent = "";
 
   try {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const stream = await anthropic.messages.stream({
       model: "claude-opus-4-8",
       max_tokens: 4096,
-      tools: [
-        {
-          type: "web_search_20260209",
-          name: "web_search",
-        } as Parameters<typeof anthropic.messages.stream>[0]["tools"][0],
-      ],
+      tools: [{ type: "web_search_20260209", name: "web_search" }] as any,
       messages: [{ role: "user", content: prompt }],
     });
 
