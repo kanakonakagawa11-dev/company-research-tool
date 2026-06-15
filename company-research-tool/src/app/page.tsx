@@ -200,7 +200,7 @@ const styles: Record<string, React.CSSProperties> = {
     flexDirection: "column",
   },
   header: {
-    background: "linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%)",
+    background: "linear-gradient(135deg, #c2185b 0%, #e91e8c 100%)",
     color: "#fff",
     padding: "24px 32px",
     boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
@@ -288,7 +288,7 @@ const styles: Record<string, React.CSSProperties> = {
     padding: "12px 28px",
     fontSize: "1rem",
     fontWeight: 600,
-    background: "#2563eb",
+    background: "#e91e8c",
     color: "#fff",
     border: "none",
     borderRadius: 8,
